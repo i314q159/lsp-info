@@ -8,7 +8,6 @@ function M.lsp_info()
     for _, server in ipairs(vim.lsp.get_active_clients({ bufnr = 0 })) do
         table.insert(names, server.name)
     end
-    print("test load")
     return "󰙴 " .. table.concat(names, " ")
 end
 
